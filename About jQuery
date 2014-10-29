@@ -1,0 +1,80 @@
+jQuery is a javascript library that is used to make some of the functions that we want to be on our application 
+easily available.
+
+JQuery takes lots of common tasks that requires lots of javascript codes to be accomplish.
+It makes our work easy. It wraps some of the common tasks code inside a function and makes it easily available for us to 
+use.
+
+Ex: Before jQuery we have to write some line of codes for making some part of our html elements to HIDE/SHOW.But due to jquery
+we can simply select the element on which we want to provide some extra effects and combine them with the name of the function.
+
+jQuery also simplifies lot of complicated things from javascript, like AJAX calls and DOM manipulation.
+
+Some of the basic features available in jQuery are:
+
+1)DOM manipulation
+2)Animation
+3)HTML elements manipulation
+4)AJAX 
+5)Utilities
+6)Event Handling
+7)Changing at tributes value of html elements
+8)Adding new class and id
+9)JSON parsing
+10)Multi Browser Support
+
+and many more things.........
+
+HOW TO USE jQuery:
+                 
+                 TO use jQuery first we have to add it inside our file.As jQuery is simply a javascript file so 
+  to add this we can simly use the <script> tag and as we know script tag has an attribute "src"(src=source),so by simply
+  giving the value for src attribute we can add jquery to our file and can use all of ite features.
+
+  To download jQuery we have to visit its official website:- http://jquery.com/
+  and here we will find two version of jQuery available for downloading:
+  1)Production version - this is for your live website because it has been minified and compressed
+  2)Development version - this is for testing and development (uncompressed and readable code)
+  
+  After downloding we can use the below code to add
+  <head>
+           <script src="jquery-1.11.1.min.js"></script>
+  </head>
+  
+  It is not necessary that we have to download the jquery in our system to use.But if we have good internet 
+  speed then we can can include it from a CDN (Content Delivery Network).
+  
+  Google CDN:
+  
+   <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  
+  Microsoft CDN:
+  <head>
+      <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+  </head>
+  
+  Now the question arises that which one of the above method is good i.e. whether to download it or use the CDN.
+  
+  If we want to simply learn jquery then it is good option to select the download option and include it.
+  But if we want it for our development purpose like we want it for our live website then it is advised from many of
+  the top programmer tha we must use CDN.
+  
+  And the reason is that:
+  
+  1)Reduction in load: It reduces the load of our web server.
+  
+  2)Faster Downloading : As CDN server are fast and are spread all over 
+                            the world, loading of jQuery script is faster from CDN.
+  
+  3)Caching : biggest benefit of using CDN to load jQuery is that if a user visited any  website before which was using the same CDN to load jQuery than it would be cached and served from browser
+                cache directly instead of downloading it again.However, when a browser sees references to CDN-hosted copies of jQuery, it understands that all of those references do refer to the exact same file. With all of these CDN references point to exactly the same URLs, the browser can trust that those files truly are identical and won’t waste time re-requesting the file if it’s already cached. 
+                Thus, the browser is able to use a single copy that’s cached on-disk, regardless of which site the CDN references appear on.
+                This creates a potent “cross-site caching” effect which all sites using the CDN benefit from. Since Google’s CDN serves the
+                file with headers that attempt to cache the file for up to one year, this effect truly has amazing potential. With many thousands of the most trafficked sites on the Internet already using the Google CDN to serve jQuery, it’s quite possible that many of your users will never make a single HTTP request for jQuery when they visit sites using the CDN.
+  
+  4.) Parallel Downloading : as jQuery script is on CDN server i.e  on different domain, browsers will download it in parallel with the scripts on our domain.
+  
+
+ 
