@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").bind({
+    click:function(){$("p").slideToggle();},
+    mouseover:function(){$("body").css("background-color","#E9E9E4");},  
+    mouseout:function(){$("body").css("background-color","#FFFFFF");}  
+  });
+});
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<button>Click me!</button>
+
+</body>
+</html>
