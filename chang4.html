@@ -1,0 +1,39 @@
+<html>
+ 
+<head>
+ 
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+ 
+<script>
+ 
+$(document).ready(function(){
+ 
+    $("#txtchange").change(function(){
+ 
+        alert ("change event occured with value: " + document.getElementById("txtchange").value);
+ 
+  });
+ 
+});
+ 
+</script>
+ 
+</head>
+ 
+<body>
+ 
+<p>Enter some text in first field then either press Tab key or click somewhere else on page!</p>
+ 
+<form id="changeform">
+ 
+Enter text: <input id="txtchange" value="" type="text">
+ 
+text field 2: <input id="txtchange2" type="text">
+ 
+<input type="submit" value="submit now"/>
+ 
+</form>
+ 
+</body>
+ 
+</html>
