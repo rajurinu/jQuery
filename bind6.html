@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#BoxId").bind({
+	click : function(){
+		$('span').text("Single Clicked");
+	},
+	dblclick : function(){
+		$('span').text("Double Clicked");
+	}
+}); 
+});
+</script>
+
+</head>
+<body>
+
+<div id="BoxId">
+	Mouseover Me, Click Me or Double Click Me
+</div>
+<span></span>
+
+</body>
+</html>
