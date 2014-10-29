@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("p").bind("mouseover mouseout",function(){
+
+   $("p").toggleClass("intro");
+});
+
+});
+</script>
+<style>
+.intro
+{
+font-size:150%;
+color:red;
+}
+</style>
+</head>
+<body>
+
+<p>Hover the mouse pointer over this paragraph.</p>
+
+</body>
+</html>
