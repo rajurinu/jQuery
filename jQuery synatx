@@ -1,0 +1,74 @@
+jQuery selector is tailor made for selecting HTML elements and performing some action on the element(s).
+
+Syntax:
+       $(selector).action();
+       
+Ex:
+
+   $("p").hide() -> To hide all p elements.
+   $(this).hide() -> To hide the current html element 
+   
+   Or we can say that we have to sipmly select the html elements using css selector method and then apply whatever funcyion we wnant.
+   
+   But all jQuery methods go inside document ready event:
+   
+   $(document).ready(function(){
+   
+     //All the jQuery methods will go here
+   
+   
+   });
+   It is used to prevent any jQuery code to run before the code loads. 
+   If we will not place our jquery code inside document ready event then the code inside will try to execute as the page loads and 
+   there may be the case that some of the html elements are not downloaded in html DOM and that will result an inappropriate behaviour.
+   So thats why we say that start your work after the document loads completely.
+   
+   There are other methods to use or write document ready event
+   
+   $(funtion(){
+   //code here
+   });
+   
+   
+   jQuery(document).ready(function($){
+   
+    //code here
+   });
+   
+   
+   
+   (function($) { 
+    // code using $ as alias to jQuery
+      $(function() {
+    // more code using $ as alias to jQuery
+    });
+   })(jQuery);
+   // other code using $ as an alias to the other library
+   
+     
+     
+     $(window).load(function(){  
+     //initialize after images are loaded  
+      });
+      
+      
+  Adding the jQuery word solves the problem of conflict.
+  As other javascript frameworks also usee the same shortcut method using $ sign.
+  
+How do we prevent conflicts?
+
+                    Well, to prevent conflicts we use aliasing the jQuery namespace (ie by using example 3 above).
+Then when you call $.noConflict() to avoid namespace difficulties (as the $ shortcut is no longer available)
+we are forcing it to wrtie jQuery each time it is required.
+
+
+     jQuery.noConflict(); // Reverts '$' variable back to other JS libraries
+     jQuery(document).ready( function(){ 
+         //do jQuery stuff when DOM is ready with no conflicts
+      });  
+ 
+   //or the self executing function way
+   jQuery.noConflict();
+  (function($) { 
+    // code using $ as alias to jQuery
+   })(jQuery);
